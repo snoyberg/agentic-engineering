@@ -54,6 +54,14 @@ Avoid cleverness that obscures:
 
 Prefer ordinary functions and explicit control flow when abstraction would hide important behavior.
 
+## Prefer idempotent operational mutations
+
+When the underlying domain permits it, make operational mutations and automation safe to retry without creating duplicate or surprising state.
+
+Prefer commands that can distinguish between making a change and discovering that the desired state already exists. Report that distinction when it is useful to operators or automation.
+
+Do not force idempotency where the operation is inherently consumptive or one-shot. The goal is predictable retry behavior, especially for deployment, administration, provisioning, migration, and other operational tooling.
+
 ## Use the compiler and tools to remove reasoning burden
 
 Do not require a reviewer to prove an invariant mentally if a tool can enforce it cheaply.
