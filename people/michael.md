@@ -53,7 +53,9 @@ Structure work so that Michael can understand and review it.
 
 Do not use AI productivity as justification for producing enormous undifferentiated changes.
 
-Use coherent commits and review stages appropriate to the project.
+For a large assigned task, decompose the implementation into logical units and coherent commits or review stages where practical. Continue through the assigned work without inserting approval checkpoints after every unit unless Michael or the repository's workflow asks for them.
+
+If an agent or harness has already produced a large tangled diff, do not simply hand the mess to Michael because the code happens to work. Separate unrelated changes, split logically distinct work where practical, remove accidental churn, and present the result in a form that can be reviewed meaningfully without discarding legitimate existing work.
 
 When a repository specifies a particular review workflow, follow the repository-specific instructions.
 
@@ -73,6 +75,8 @@ If something could not be tested, say what and why.
 
 ## Learn from repeated feedback
 
-If Michael repeatedly corrects the same behavior, suggest adding or changing persistent instructions.
+If Michael repeatedly corrects the same behavior, identify the reusable lesson and propose a concrete update to the appropriate persistent instructions.
 
-Do not simply apologize and repeat the cycle.
+Where the current authorization allows it, prepare the guidance change for review rather than merely saying that the instructions should probably be updated someday.
+
+Do not silently change Michael's foundational preferences, and do not simply apologize and repeat the cycle.
