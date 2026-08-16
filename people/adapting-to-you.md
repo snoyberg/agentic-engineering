@@ -41,11 +41,15 @@ The agent should compensate for reduced code review with stronger automated veri
 
 Once the agent understands how you want to work, it should record those preferences using the persistent mechanisms supported by your tools.
 
-Keep your personal guidance separate from Michael's upstream guidance.
+If this way of working becomes recurring, consider maintaining your own agentic-engineering repository. It can reference Michael's repository and other peers while preserving your own autonomy choices, technical preferences, additions, and disagreements.
 
-Reference upstream recommendations where useful and record only your choices, additions, and disagreements locally.
+Do not present another person's preferences as your own merely because you started from their repository.
 
-You should be able to change upstream sources later without losing your own identity.
+When a stable historical reference matters, link to the peer repository at a specific commit. When you want to follow a peer's evolving thinking, a moving repository link may also be useful.
+
+If you deliberately copy guidance for independence or durability, preserve its source when practical and then treat your local version as your responsibility.
+
+See `collaboration/relationships.md` for the peer model.
 
 ## Revisit the arrangement
 
