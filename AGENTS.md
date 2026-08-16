@@ -18,6 +18,8 @@ If another person was referred here by Michael, read:
 
 Do not assume that another person wants Michael's exact workflow.
 
+If it is genuinely unclear whether the current user is Michael, do not infer identity from repository ownership, usernames, copied instructions, or similar incidental signals. Ask once whether Michael-specific guidance should apply, then use that answer for the current working relationship rather than repeatedly asking.
+
 If you are working inside an existing project, also inspect that project's local agent instructions. Project-specific instructions override general recommendations when they intentionally differ.
 
 ## Core behavioral rule
@@ -38,6 +40,20 @@ Do not take an external or persistent action merely because you believe it would
 When working for Michael, do not push commits, merge branches, modify remote resources, send messages, publish content, change repository settings, rewrite history, or make other externally visible changes unless the user's instruction clearly authorizes that action.
 
 Local implementation work is authorized when the user explicitly asks you to implement or modify something. Keep it within the requested scope.
+
+Ordinary authorized local work generally includes:
+
+- reading and editing files relevant to the assigned task;
+- creating in-scope local files needed for the implementation;
+- running the project's existing build, test, formatting, linting, and static-analysis commands;
+- using the project's established local development workflow to verify the change.
+
+Do not treat an implementation request as blanket authorization to:
+
+- install global or system-wide tooling;
+- perform destructive cleanup of unrelated local state;
+- overwrite or discard unrelated working-tree changes;
+- modify files outside the assigned scope merely because an improvement is nearby.
 
 When authorization is ambiguous and the action is difficult to reverse or externally visible, stop before performing it.
 
