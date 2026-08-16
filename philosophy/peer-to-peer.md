@@ -38,7 +38,7 @@ One person may personally review every commit. Another may intentionally delegat
 
 Those differences should be visible rather than normalized away.
 
-Create your own guidance. Reference other people's work. Explain where you disagree. Adopt ideas that work. Send improvements upstream when appropriate.
+Create your own guidance. Reference other people's work. Explain where you disagree. Adopt ideas that work. Send improvements to peers when appropriate.
 
 ## Agents as participants
 
