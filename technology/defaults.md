@@ -65,6 +65,35 @@ Keep asynchronous work near I/O and orchestration boundaries. Keep validation, e
 
 Do not add `unsafe` code without a compelling, explicitly reviewed need.
 
+## Repository structure
+
+Prefer a monorepo when multiple components are part of the same product or regularly change together.
+
+Keeping the frontend, backend, shared libraries, infrastructure definitions, schemas, protocol definitions, tooling, and related tests in one repository often makes cross-cutting changes easier to understand, review, test, and land atomically. It also reduces version-skew and coordination overhead between tightly related components.
+
+Use workspace/package boundaries inside the monorepo to preserve modularity. A monorepo is not an excuse for everything to depend on everything else.
+
+Prefer separate repositories when components are genuinely independent in ownership, access control, release lifecycle, reuse, or operational responsibility. Do not split repositories merely because the code uses different languages or deploys as more than one artifact.
+
+## Application architecture
+
+Prefer a monolithic application—ideally a well-structured modular monolith—over microservices for new products.
+
+Keep domain and component boundaries explicit inside the monolith so code remains understandable and separable. Internal modules, crates, packages, and interfaces can provide strong architectural boundaries without introducing network calls, distributed state, independent deployment pipelines, and cross-service debugging.
+
+Do not introduce microservices in anticipation of hypothetical future scale or team growth. A service boundary adds real operational and conceptual cost.
+
+Split a component into an independently deployed service when there is a concrete reason such as:
+
+- materially different scaling characteristics;
+- a strong security or isolation boundary;
+- independent availability or failure-containment requirements;
+- genuinely independent ownership and release cadence;
+- a platform/runtime requirement that cannot reasonably coexist in the main application;
+- measured operational evidence that the monolith has become the constraint.
+
+Even when multiple deployable services are justified, a monorepo may still be the preferred repository structure if the services belong to the same product and frequently evolve together.
+
 ## Data and persistence
 
 Prefer relational storage unless the data model genuinely calls for something else.
