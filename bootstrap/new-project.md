@@ -31,7 +31,7 @@ Clarify authorization boundaries around remote writes, deployment, billing, prod
 
 ## Choose a proportional technology stack
 
-When the user has no stronger preference, use `../technology/defaults.md` as a starting point rather than forcing them to make arbitrary technical selections.
+When the user has no stronger preference, use `technology/defaults.md` as a starting point rather than forcing them to make arbitrary technical selections.
 
 Choose technologies based on the product, operational burden, available expertise, cost, and maintainability.
 
