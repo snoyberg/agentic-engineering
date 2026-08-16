@@ -2,6 +2,8 @@
 
 Use this guide when someone arrives with little or no existing AI software-development environment.
 
+This document is addressed to the AI agent helping that person.
+
 Do not perform every step mechanically. Determine what is already configured.
 
 ## 1. Understand the project
@@ -51,21 +53,29 @@ Never ask the user to paste long-lived secrets into repository files or agent in
 
 Create a repository early enough that meaningful work is versioned.
 
-## 5. Establish persistent agent guidance
+## 5. Establish the user's own agentic-engineering repository
 
-Create repository-local agent instructions.
+If the user intends to build more than a one-off experiment, recommend creating a small repository for their persistent agent guidance before creating many project-specific rules.
 
-Reference this repository as upstream guidance where appropriate.
+That repository should belong to the user or their organization. It can begin with only a README and an agent entry point. Record the user's autonomy choices, technical preferences, recurring corrections, and deliberate differences from Michael's recommendations as they emerge.
 
-Record the user's own autonomy and review preferences separately.
+Reference Michael's repository and any other useful peer repositories instead of presenting their preferences as the user's own. When reproducibility matters, use a commit-specific permalink. Copy selected guidance when the user deliberately wants an independent or durable snapshot.
 
-If their AI tool supports persistent user-level instructions, use that mechanism for preferences that should apply to every project.
+Do not block useful work if the user is not ready to maintain a dedicated guidance repository. Start with the persistent mechanism their current tool supports and migrate later if the pattern proves valuable.
 
-Do not assume that a tool supports a particular global-instruction mechanism. Inspect the tool's current capabilities.
+## 6. Establish project-local agent guidance
 
-## 6. Choose technology conservatively
+Create repository-local agent instructions for the actual project.
 
-Start from project requirements.
+The project should normally reference the user's agentic-engineering repository and may reference other peer guidance repositories where relevant.
+
+Keep project-specific facts and exceptions local: architecture decisions, build commands, deployment details, domain rules, current constraints, and deliberate deviations from the user's defaults.
+
+Do not copy large bodies of peer guidance into each project merely for convenience. Do copy or vendor material intentionally when archival durability, independence, or protection against disappearing external content matters.
+
+## 7. Choose technology conservatively
+
+Start from project requirements and read `technology/defaults.md` when the user has no stronger preference.
 
 Prefer mature tools, boring deployment paths, strong automated checking, and technologies the available humans and agents can maintain.
 
@@ -73,7 +83,21 @@ Do not choose an elaborate architecture because the implementation cost appears 
 
 Operational and conceptual complexity remain real costs.
 
-## 7. Make the first experiment cheap
+## 8. Choose a low-cost deployment path
+
+Assume a person experimenting with a new product may not have production infrastructure experience or the ability to manage complex cloud cost controls.
+
+Develop and test locally first whenever practical.
+
+For a small web experiment, Cloudflare Pages and Workers are strong starting points because they can support useful public deployments with relatively little operational machinery. D1 is worth considering when a Cloudflare-native relational store fits the workload.
+
+Verify current pricing, free-tier limits, quotas, and runtime constraints before relying on them. Platform economics change.
+
+Avoid defaulting a speculative project to Kubernetes, a sprawling AWS architecture, or multiple always-on managed services. If a heavier platform is genuinely required, explain why and make the likely cost model visible to the user.
+
+Where providers support budgets, quotas, alerts, or hard limits, configure sensible protections before exposing an experimental service to unpredictable traffic.
+
+## 9. Make the first experiment cheap
 
 The availability of AI makes speculative prototypes more reasonable.
 
@@ -83,7 +107,7 @@ Do not respond by making prototypes architecturally extravagant.
 
 Identify the riskiest assumption and build enough to learn whether it is true.
 
-## 8. Build feedback loops
+## 10. Build feedback loops
 
 Before increasing agent autonomy, establish the mechanisms that make mistakes visible:
 
@@ -98,8 +122,8 @@ Before increasing agent autonomy, establish the mechanisms that make mistakes vi
 
 Automation should increase the amount of safe experimentation, not merely the amount of code produced.
 
-## 9. Record what you learn
+## 11. Record what you learn
 
 When the user develops recurring preferences or the project discovers generally reusable practices, update persistent guidance.
 
-If an improvement appears useful beyond this project, consider proposing it upstream.
+If an improvement appears useful to another person's agentic-engineering repository, suggest a pull request or discussion with that peer rather than treating one repository as an authority over the other.
