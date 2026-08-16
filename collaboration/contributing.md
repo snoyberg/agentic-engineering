@@ -11,7 +11,7 @@ Useful contributions include:
 - correcting an inaccurate recommendation;
 - documenting a recurring failure mode;
 - making an instruction clearer to humans or agents;
-- adding evidence that changes a recommendation;
+- adding evidence that supports, weakens, or changes a recommendation;
 - identifying a security or trust-boundary problem;
 - adding a peer repository with a meaningful relationship;
 - documenting an alternative approach where disagreement is useful.
@@ -20,7 +20,9 @@ Useful contributions include:
 
 When proposing a behavioral or engineering rule, explain why it helps and what problem it addresses.
 
-A rule that merely reflects personal taste may belong in a downstream repository rather than here.
+Evidence that confirms an existing recommendation is useful too. A repeated success can justify stronger confidence, narrower caveats, or better examples even when the conclusion itself does not change.
+
+A rule that merely reflects personal taste may belong in another person's peer repository rather than here.
 
 ## Agent-generated contributions
 
