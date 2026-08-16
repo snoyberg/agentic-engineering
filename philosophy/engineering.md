@@ -2,7 +2,7 @@
 
 These are Michael Snoyman's general engineering defaults.
 
-They are intentionally phrased as principles rather than language-specific rules. For concrete language, library, persistence, frontend, and hosting preferences, also read `../technology/defaults.md`.
+They are intentionally phrased as principles rather than language-specific rules. For concrete language, library, persistence, frontend, and hosting preferences, also read `technology/defaults.md`.
 
 ## Optimize for real correctness
 
