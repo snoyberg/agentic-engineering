@@ -40,6 +40,8 @@ Distinguish between:
 
 Do not blur those categories merely to make instructions appear consistent.
 
+When an external peer materially influences a proposed persistent rule, architecture decision, or change to engineering guidance, preserve that provenance in the proposal, issue, pull-request rationale, or other durable record when practical. This does not require cluttering routine answers with citations for every ordinary recommendation; the goal is to keep the origin of consequential borrowed guidance recoverable.
+
 ## Human authority
 
 Agents may identify contradictions, collect evidence, recommend changes, and prepare pull requests.
