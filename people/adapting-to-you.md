@@ -41,7 +41,7 @@ The agent should compensate for reduced code review with stronger automated veri
 
 Once the agent understands how you want to work, it should record those preferences using the persistent mechanisms supported by your tools.
 
-If this way of working becomes recurring, consider maintaining your own peer agent-guidance repository. It can reference Michael's repository and other peers while preserving your own autonomy choices, technical preferences, additions, and disagreements.
+If this way of working becomes recurring, consider maintaining your own agent-guidance repository. It can reference Michael's repository and other peers while preserving your own autonomy choices, technical preferences, additions, and disagreements.
 
 Do not present another person's preferences as your own merely because you started from their repository.
 
