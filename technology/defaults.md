@@ -20,21 +20,27 @@ Strong typing is a means to correctness, not a goal by itself. Prefer simple dom
 
 Prefer TypeScript over JavaScript for substantial browser application code when using the JavaScript ecosystem.
 
-A conventional starting point for a browser application is React + Vite with strict TypeScript. TanStack Query and TanStack Router are reasonable defaults when their problems are present; do not add them merely because they are familiar.
+For a new browser application where the user has no personal preference, React + Vite with strict TypeScript is the safer general default because of ecosystem breadth, tooling support, developer familiarity, and staffing flexibility. TanStack Query and TanStack Router are reasonable defaults when their problems are present; do not add them merely because they are familiar.
 
 Use a fast formatter/linter such as Biome when it fits the project. Prefer `pnpm` for Node package management unless the project already standardizes on another tool.
 
 ### Rust in the browser
 
-Leptos is a good option for Rust-heavy projects where sharing types or logic with Rust materially simplifies the system, or where keeping most implementation in Rust is itself useful.
+Michael personally prefers Leptos and may choose it as an intentional use of novelty budget, especially in Rust-heavy projects where sharing types or logic with Rust materially simplifies the system or where keeping most implementation in Rust has real value.
 
-Do not choose Rust/WASM merely to avoid TypeScript. Browser ecosystem integration, bundle size, developer familiarity, and product requirements still matter.
+Do not generalize that preference automatically to other users. For someone who simply wants to build a web application and has no strong stack preference, React + TypeScript is normally the more conservative recommendation.
 
-### Haskell and other languages
+When choosing Leptos, consider `leptos_router` for routing and `leptos-fetch` for client-side async state/data fetching when those needs are present. Verify the current maintenance state, compatibility, and ecosystem health before relying on ecosystem crates; Leptos itself is mature but is now expected to receive lighter ongoing maintenance than during its earlier development phase.
 
-Haskell remains a strong option for work where its ecosystem or abstractions provide a concrete advantage, especially strongly typed functional domain logic. It is not the default for a new general-purpose product when Rust provides comparable benefits with a broader deployment and staffing path.
+Do not choose Rust/WASM merely to avoid TypeScript. Browser ecosystem integration, bundle size, developer familiarity, maintenance trajectory, and product requirements still matter.
 
-C and C++ are appropriate when required by an existing codebase, platform, FFI boundary, or performance constraint. Do not introduce them into a greenfield application without a concrete reason.
+### Other languages
+
+Haskell, C, and C++ should require strong project-specific motivation over Rust for new greenfield work. Existing codebases, required ecosystems, FFI boundaries, specialized performance constraints, platform requirements, or a uniquely strong library may justify them; familiarity or historical preference alone generally does not.
+
+For native mobile development, Swift is a natural default for iOS and Kotlin for Android when a native application is the right product choice.
+
+Other languages are acceptable when their platform or ecosystem gives a concrete advantage. Prefer the language that best matches the actual product and maintenance environment rather than forcing Rust into a domain where another platform-native choice is clearly stronger.
 
 Use shell only as small glue. Prefer Rust for substantial automation, parsing, validation, or business logic.
 
@@ -82,6 +88,8 @@ Cloudflare is the first platform to consider for many such projects:
 - D1 when its relational-storage model fits;
 - other Cloudflare services only when a concrete need justifies them.
 
+For Cloudflare Pages, prefer the platform's built-in Git-connected build/deployment workflow when it fits the project. This usually simplifies credential management and gives preview deployments for branches or pull requests without additional CI plumbing. Use custom GitHub Actions or other deployment machinery when there is a concrete requirement the built-in workflow does not satisfy.
+
 Verify current pricing, quotas, runtime limits, and product availability before relying on them; these are operational facts, not permanent architectural truths.
 
 Do not start an experimental product with Kubernetes, a large AWS topology, or a collection of always-on managed services merely because those tools are powerful. AI makes code cheaper; it does not make operational complexity or surprise cloud bills cheap.
@@ -94,7 +102,7 @@ When deploying an experiment for a non-expert user, explain likely costs, choose
 
 Use Docker when it materially improves reproducibility, deployment, or integration testing. Do not make containers mandatory for a program that is simpler to run directly.
 
-Use GitHub Actions as the ordinary first choice for GitHub-hosted project CI unless there is a project-specific reason to use something else.
+Use GitHub Actions as the ordinary first choice for GitHub-hosted project CI unless there is a project-specific reason to use something else or the hosting platform's native Git integration already provides the needed deployment workflow more simply.
 
 Automate formatting, linting/static analysis, tests, and build checks early enough that agents receive fast feedback.
 
