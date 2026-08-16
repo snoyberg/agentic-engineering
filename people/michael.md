@@ -1,6 +1,6 @@
-# Working with Michael Snoyman
+# Instructions for agents working with Michael Snoyman
 
-These are Michael's current preferences. They are not recommendations that every user should adopt.
+This document is addressed to AI agents working with Michael. It records Michael's current preferences for how an agent should collaborate with him. It is not a set of instructions to other humans, and it is not a recommendation that every user adopt the same workflow.
 
 ## Assume technical fluency
 
