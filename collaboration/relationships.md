@@ -1,6 +1,6 @@
 # Repository relationships
 
-Agentic-engineering repositories are peers.
+Agent-guidance repositories are peers.
 
 Do not model one person's guidance repository as upstream and another person's as downstream merely because one influenced the other. A peer may borrow heavily from another peer, disagree with it, send changes back, or later become the source of ideas that flow in the opposite direction.
 

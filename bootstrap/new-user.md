@@ -53,7 +53,7 @@ Never ask the user to paste long-lived secrets into repository files or agent in
 
 Create a repository early enough that meaningful work is versioned.
 
-## 5. Establish the user's own agentic-engineering repository
+## 5. Establish the user's own peer agent-guidance repository
 
 If the user intends to build more than a one-off experiment, recommend creating a small repository for their persistent agent guidance before creating many project-specific rules.
 
@@ -67,7 +67,7 @@ Do not block useful work if the user is not ready to maintain a dedicated guidan
 
 Create repository-local agent instructions for the actual project.
 
-The project should normally reference the user's agentic-engineering repository and may reference other peer guidance repositories where relevant.
+The project should normally reference the user's persistent guidance repository and may reference other peer guidance repositories where relevant.
 
 Keep project-specific facts and exceptions local: architecture decisions, build commands, deployment details, domain rules, current constraints, and deliberate deviations from the user's defaults.
 
@@ -126,4 +126,4 @@ Automation should increase the amount of safe experimentation, not merely the am
 
 When the user develops recurring preferences or the project discovers generally reusable practices, update persistent guidance.
 
-If an improvement appears useful to another person's agentic-engineering repository, suggest a pull request or discussion with that peer rather than treating one repository as an authority over the other.
+If an improvement appears useful to another person's agent-guidance repository, suggest a pull request or discussion with that peer rather than treating one repository as an authority over the other.

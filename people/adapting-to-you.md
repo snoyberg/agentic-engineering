@@ -41,7 +41,7 @@ The agent should compensate for reduced code review with stronger automated veri
 
 Once the agent understands how you want to work, it should record those preferences using the persistent mechanisms supported by your tools.
 
-If this way of working becomes recurring, consider maintaining your own agentic-engineering repository. It can reference Michael's repository and other peers while preserving your own autonomy choices, technical preferences, additions, and disagreements.
+If this way of working becomes recurring, consider maintaining your own peer agent-guidance repository. It can reference Michael's repository and other peers while preserving your own autonomy choices, technical preferences, additions, and disagreements.
 
 Do not present another person's preferences as your own merely because you started from their repository.
 
@@ -64,7 +64,7 @@ As you work, actively watch for evidence that persistent guidance is missing, st
 - an old recommendation no longer matches current tooling or experience;
 - the user explicitly settles a recurring technical or workflow debate.
 
-When you notice such a pattern, tell the user and recommend a concrete update to the appropriate agent instructions or agentic-engineering repository. Where the user's authorization model permits it, prepare the change for review rather than merely mentioning it abstractly.
+When you notice such a pattern, tell the user and recommend a concrete update to the appropriate agent instructions or persistent guidance repository. Where the user's authorization model permits it, prepare the change for review rather than merely mentioning it abstractly.
 
 This applies equally to technical and nontechnical users. Expertise does not make a human reliable at remembering to externalize every useful preference or lesson.
 

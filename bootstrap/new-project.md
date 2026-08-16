@@ -16,7 +16,7 @@ Prefer a narrow vertical slice that tests the riskiest assumption over a broad i
 
 Before making architectural decisions:
 
-1. read the user's own persistent guidance or agentic-engineering repository, if available;
+1. read the user's own persistent guidance repository, if available;
 2. read relevant peer guidance the user intentionally follows, including this repository where appropriate;
 3. inspect project-local instructions if the repository already exists;
 4. identify explicit project deviations rather than silently overriding the user's defaults.
