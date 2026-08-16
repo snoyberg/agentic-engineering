@@ -1,4 +1,4 @@
-# Agentic Engineering
+# P2P Agents
 
 This repository contains Michael Snoyman's current recommendations for working with AI agents on software projects.
 
