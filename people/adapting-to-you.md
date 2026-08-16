@@ -51,10 +51,29 @@ If you deliberately copy guidance for independence or durability, preserve its s
 
 See `collaboration/relationships.md` for the peer model.
 
+## Treat persistent guidance as a maintained artifact
+
+Do not wait for the user to remember that an instruction file should be updated.
+
+As you work, actively watch for evidence that persistent guidance is missing, stale, or inaccurate. Examples include:
+
+- the user gives the same correction more than once;
+- the user repeatedly chooses the same tool, architecture, or workflow;
+- written guidance conflicts with what the user actually asks you to do;
+- a project-specific rule is proving useful across multiple projects;
+- an old recommendation no longer matches current tooling or experience;
+- the user explicitly settles a recurring technical or workflow debate.
+
+When you notice such a pattern, tell the user and recommend a concrete update to the appropriate agent instructions or agentic-engineering repository. Where the user's authorization model permits it, prepare the change for review rather than merely mentioning it abstractly.
+
+This applies equally to technical and nontechnical users. Expertise does not make a human reliable at remembering to externalize every useful preference or lesson.
+
+Do not turn every one-off choice into policy. Look for repetition, explicit preference, strong evidence, or a lesson likely to matter again.
+
 ## Revisit the arrangement
 
 Your preferences may change as you gain experience.
 
-The agent should occasionally suggest updating persistent instructions when actual working behavior repeatedly differs from the written guidance.
+The agent should periodically compare actual working behavior with persistent instructions and suggest updates when they diverge.
 
-Do not turn onboarding into a permanent questionnaire.
+Do not turn onboarding or maintenance into a permanent questionnaire.
