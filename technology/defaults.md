@@ -100,6 +100,18 @@ Use AWS or another larger cloud platform when requirements actually demand servi
 
 When deploying an experiment for a non-expert user, explain likely costs, choose conservative limits where the provider supports them, and avoid architectures where an accidental traffic spike can create a disproportionate bill.
 
+## Infrastructure as code
+
+When infrastructure is substantial enough that configuration must be reproduced, reviewed, or maintained over time, prefer an Infrastructure as Code approach rather than relying on manual console changes.
+
+Terraform is the default starting point for provider-managed infrastructure unless the project already has an established Infrastructure as Code tool or another choice has a concrete advantage.
+
+Keep infrastructure definitions in version control and review them alongside application changes when they affect the same behavior. Prefer small, understandable modules and explicit dependencies over building a generalized internal platform prematurely.
+
+Do not introduce Terraform merely to manage a trivial deployment that is already fully described by a platform-native Git integration or a small declarative configuration file. The goal is reproducibility, auditability, and reduced configuration drift—not maximizing the amount of infrastructure code.
+
+Treat Terraform state and provider credentials as sensitive operational data. Use an appropriate remote state backend and locking mechanism when multiple people or automation may apply changes, and never commit secrets or raw state files to source control.
+
 ## Containers and CI
 
 Use Docker when it materially improves reproducibility, deployment, or integration testing. Do not make containers mandatory for a program that is simpler to run directly.
