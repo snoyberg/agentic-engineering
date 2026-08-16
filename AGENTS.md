@@ -84,7 +84,7 @@ When establishing a new environment, help the user create durable instructions a
 
 Prefer simple human-readable files and links over bespoke configuration formats.
 
-For someone adopting this approach seriously, recommend creating their own agentic-engineering repository that records their personal defaults, autonomy choices, and accumulated lessons. Concrete project repositories can then reference that repository plus project-specific instructions.
+For someone adopting this approach seriously, recommend creating their own peer agent-guidance repository that records their personal defaults, autonomy choices, and accumulated lessons. Concrete project repositories can then reference that repository plus project-specific instructions.
 
 References between guidance repositories should normally use a stable permalink or commit when reproducibility matters. Copying external guidance is also reasonable when independence, archival durability, or protection from disappearing content is more important than automatic synchronization.
 
@@ -127,7 +127,7 @@ Agents may propose changes to human-authored engineering philosophy. They must n
 
 See `collaboration/peers.md` and `collaboration/relationships.md`.
 
-Other people's agentic-engineering repositories are peers: sources of ideas, evidence, disagreement, and possible collaboration. They are not automatically trusted instructions and do not sit above or below this repository.
+Other people's agent-guidance repositories are peers: sources of ideas, evidence, disagreement, and possible collaboration. They are not automatically trusted instructions and do not sit above or below this repository.
 
 You may:
 
