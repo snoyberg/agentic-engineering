@@ -75,7 +75,7 @@ Do not copy large bodies of peer guidance into each project merely for convenien
 
 ## 7. Choose technology conservatively
 
-Start from project requirements and read `technology/defaults.md` when the user has no stronger preference.
+Start from project requirements and read `../technology/defaults.md` when the user has no stronger preference.
 
 Prefer mature tools, boring deployment paths, strong automated checking, and technologies the available humans and agents can maintain.
 
