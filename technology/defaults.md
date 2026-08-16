@@ -28,11 +28,13 @@ Use a fast formatter/linter such as Biome when it fits the project. Prefer `pnpm
 
 Michael personally prefers Leptos and may choose it as an intentional use of novelty budget, especially in Rust-heavy projects where sharing types or logic with Rust materially simplifies the system or where keeping most implementation in Rust has real value.
 
-Do not generalize that preference automatically to other users. For someone who simply wants to build a web application and has no strong stack preference, React + TypeScript is normally the more conservative recommendation.
+Do not generalize that preference automatically to other users. For someone who simply wants to build a web application and has no strong stack preference, React + TypeScript is normally the more conservative recommendation because of ecosystem breadth, tooling support, developer familiarity, and staffing flexibility—not because Leptos being mature or lightly maintained is inherently a negative.
 
-When choosing Leptos, consider `leptos_router` for routing and `leptos-fetch` for client-side async state/data fetching when those needs are present. Verify the current maintenance state, compatibility, and ecosystem health before relying on ecosystem crates; Leptos itself is mature but is now expected to receive lighter ongoing maintenance than during its earlier development phase.
+When choosing Leptos, consider `leptos_router` for routing and `leptos-fetch` for client-side async state/data fetching when those needs are present. Verify compatibility and current ecosystem health before relying on ecosystem crates.
 
-Do not choose Rust/WASM merely to avoid TypeScript. Browser ecosystem integration, bundle size, developer familiarity, maintenance trajectory, and product requirements still matter.
+Leptos being mature and feature-complete is compatible with choosing it deliberately. The relevant tradeoff is primarily ecosystem size, tooling, available developers, and integration surface versus the advantages of keeping a Rust-heavy application in one language and type system.
+
+Do not choose Rust/WASM merely to avoid TypeScript. Browser ecosystem integration, bundle size, developer familiarity, and product requirements still matter.
 
 ### Other languages
 
