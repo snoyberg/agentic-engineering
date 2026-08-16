@@ -34,8 +34,8 @@ Distinguish between:
 
 - a rule the current user explicitly adopted;
 - a project-local requirement;
-- upstream guidance;
-- an external peer's recommendation;
+- guidance adopted from a peer repository;
+- an external peer's recommendation that has not been adopted;
 - an agent's own inference.
 
 Do not blur those categories merely to make instructions appear consistent.
