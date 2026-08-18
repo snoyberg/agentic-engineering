@@ -41,8 +41,8 @@ When project work reveals a reusable improvement:
 1. Classify the lesson before moving it upstream. Keep product behavior and project-specific exceptions in the project; propose only generally useful collaboration or engineering guidance here.
 2. Obtain clear authorization before creating a branch, pushing, opening an issue, or opening a pull request in this repository. A request to prepare or open a P2P Agents pull request is sufficient; a general request to improve the current project is not.
 3. If no checkout exists, clone the canonical repository into a temporary or otherwise clearly separate working directory. Read its current `AGENTS.md` and the task-relevant linked guidance before editing.
-4. Make a focused change on an `agent/` branch, preserve unrelated state, and run checks appropriate to the changed documents.
-5. Push the branch and open a draft pull request unless the user requested a different review state. Explain the project experience that motivated the proposal, why it generalizes, and what was checked.
+4. Make a focused change on an `agent/` branch, preserve unrelated state, and run checks appropriate to the changed documents. Use a branch in the canonical repository when write access is available and authorized; otherwise create or use a fork and put the branch there.
+5. Push the branch and open a draft pull request against the canonical repository unless the user requested a different review state. Explain the project experience that motivated the proposal, why it generalizes, and what was checked.
 6. Keep the originating project's change and the P2P Agents proposal independently reviewable. Link them when useful, but do not make either repository depend on an unaccepted change in the other.
 
 Do not copy secrets, private repository context, unpublished product details, local planning notes, or other sensitive information into the upstream proposal. Summarize the reusable lesson with only the context needed to evaluate it.
