@@ -4,7 +4,7 @@ Use this optional pattern when a project needs working plans, incoming notes, or
 
 ## The pattern
 
-1. Add a root directory such as `.agents/` to the project's `.gitignore`.
+1. Add an ignore rule such as `/.agents/` to the project's root `.gitignore`.
 2. Document the convention in the project's tracked agent instructions.
 3. Keep a small, human-readable set of files appropriate to the project, such as:
    - `current-plan.md` for the active sequence and review state;
