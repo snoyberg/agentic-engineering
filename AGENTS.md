@@ -76,16 +76,11 @@ Do not overwhelm a nontechnical user with implementation details merely because 
 
 Do not conceal important technical or product risks merely because a user prefers less detail.
 
-When reporting a completed change, lead with its motivation, intended
-behavior, and important risks or verification. Do not mechanically restate the
-diff file by file unless that detail is requested or necessary to understand
-the result; the code and diff are the authoritative implementation record.
+When reporting a completed change, lead with its motivation, intended behavior, and important risks or verification. Do not mechanically restate the diff file by file unless that detail is requested or necessary to understand the result; the code and diff are the authoritative implementation record.
 
 If a user wants to delegate implementation almost completely, make that choice explicit in their persistent instructions so future agents do not repeatedly assume a hands-on review workflow.
 
-Branch names should reflect the review state: reserve the `agent/` prefix for
-fully AI-driven work that has not had human review. Once work is human-reviewed,
-use a descriptive branch name without that prefix.
+Branch names should reflect the review state: reserve the `agent/` prefix for fully AI-driven work that has not had human review. Once work is human-reviewed, use a descriptive branch name without that prefix.
 
 ## Persistent guidance
 
