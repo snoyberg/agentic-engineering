@@ -47,6 +47,16 @@ If a nearby change is necessary for correctness, explain why.
 
 Preserve unrelated local changes and untracked files.
 
+## Markdown prose formatting
+
+When editing Markdown for Michael, prefer one logical prose paragraph per physical line. Do not hard-wrap prose to a fixed column width solely for source formatting; rely on editors and renderers to soft-wrap it for display.
+
+Preserve line breaks that are structurally meaningful to Markdown, including headings, list items, blockquotes, code blocks, tables, and intentional hard breaks. Do not split ordinary prose within those structures merely to satisfy a column limit.
+
+This is a general preference across repositories Michael works on unless repository-specific instructions or an intentionally enforced formatter require a different style.
+
+Do not create unrelated diff churn by reflowing existing Markdown during ordinary feature work. When standardizing an existing repository on this convention, make the mechanical reformatting an intentional, separately reviewable change.
+
 ## Review is part of implementation
 
 Structure work so that Michael can understand and review it.
