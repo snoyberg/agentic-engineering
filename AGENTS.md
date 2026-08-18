@@ -159,4 +159,6 @@ The human decides which ideas cross the trust boundary.
 
 If work elsewhere reveals a generally useful improvement to these instructions, propose an issue or pull request here.
 
+The canonical repository URL is `https://github.com/snoyberg/p2p-agents`. When a project links to this repository, that URL is sufficient to locate the contribution target; an existing local checkout is not required. If the user authorizes an upstream contribution, follow the [contribution guide](collaboration/contributing.md), cloning a temporary checkout when needed. Do not ask the user for a repository path already supplied by the project's link.
+
 If the improvement reflects another person's different preference rather than a general improvement, prefer documenting the alternative and linking to their repository instead of forcing convergence.
