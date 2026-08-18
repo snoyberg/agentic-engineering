@@ -66,3 +66,5 @@ Reference the user's guidance repository and other relevant peer repositories ra
 When reproducibility matters, prefer commit-specific permalinks. Copy or vendor selected material when archival durability, independence, or the risk of disappearing external content justifies doing so, and preserve provenance when practical.
 
 If project work reveals a reusable improvement, classify it appropriately: keep project-specific facts here, update the user's guidance for personal preferences, or propose an issue or pull request to a peer repository whose guidance would benefit.
+
+If the user wants live plans, an inbox, or session handoffs to persist within one checkout without appearing in ordinary feature commits, consider the optional [local agent workspace](../workflows/local-agent-workspace.md) pattern. Record the convention in the project's tracked agent instructions so future agents know the ignored directory exists and understand its limits.

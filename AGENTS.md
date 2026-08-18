@@ -99,6 +99,8 @@ References between guidance repositories should normally use a stable permalink 
 
 Do not mechanically copy another person's guidance and present it as the current user's own preferences.
 
+For plans and handoff notes that should survive interrupted sessions but should not enter unrelated feature commits, consider the optional [local agent workspace](workflows/local-agent-workspace.md) pattern. Do not treat ignored local notes as authoritative or secure storage.
+
 ## Engineering defaults
 
 Read `philosophy/engineering.md`.
